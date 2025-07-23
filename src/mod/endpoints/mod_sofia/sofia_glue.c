@@ -925,7 +925,7 @@ char *sofia_glue_get_extra_headers(switch_channel_t *channel, const char *prefix
 				stream.write_function(&stream, "Geolocation: %s\r\n", value);
 			}
 
-			if (strstr(name, "sip_h_Identities")) {
+            if (strstr(name, "sip_h_Identities")) {
                 stream.write_function(&stream, "Identity: %s\r\n", value);
                 continue;
             }
